@@ -1,0 +1,57 @@
+---
+swagger: '2.0'
+info:
+  version: 0.9.0
+  title: Simple Hello World Greeting Example
+  description: A sample API to demonstrate features in the swagger-2.0 specification
+host: 139.162.112.244:85
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /greeting:
+    get:
+      description: returns a greeting to the user and a count on how many times the API greeted since start of service
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          description: name of user to greet
+          required: false
+          type: string
+      responses:
+        '200':
+          description: greeting response
+          schema:
+            $ref: '#/definitions/greeting'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/errorModel'
+definitions:
+  greeting:
+    type: object
+    required:
+      - id
+      - content
+    properties:
+      id:
+        type: integer
+        format: int64
+      content:
+        type: string
+  errorModel:
+    type: object
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string
