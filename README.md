@@ -65,15 +65,16 @@ TBD
 
   4) generate server files
 
-    * using the cli jar file
+  * using the cli jar file
 ```bash
 java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate \
   -i swagger.yaml \
   -l spring \
+  -c config.json \
   -o out/server/swgapi
 ```
 
-    * using docker
+  * using docker
 ```bash
 docker run -it \
     -v $PWD/out/server:/swagger-api/out \
@@ -81,6 +82,7 @@ docker run -it \
     jimschubert/swagger-codegen-cli generate \
     -i /swagger-api/yaml/swagger.yml \
     -l spring \
+    -c /swagger-api/yaml/config.json \
     -o /swagger-api/out/swgapi
 ```
 

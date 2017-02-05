@@ -1,0 +1,8 @@
+{
+  "groupId":"ph.deebee",
+  "artifactId":"swgapi",
+  "artifactVersion":"0.9.0",
+  "modelPackage":"ph.deebee.swgapi.model",
+  "apiPackage":"ph.deebee.swgapi.api",
+  "invokerPackage":"ph.deebee.swgapi"
+}

@@ -4,11 +4,11 @@ info:
   version: 0.9.0
   title: Simple Hello World Greeting Example
   description: A sample API to demonstrate features in the swagger-2.0 specification
-host: 139.162.112.244:85
+# host: 139.162.112.244:85
 schemes:
   - http
-consumes:
-  - application/json
+# consumes:
+#   - application/json
 produces:
   - application/json
 paths:
