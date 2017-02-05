@@ -2,8 +2,9 @@
 Define API I/F using swagger specifications
 
 # API Design Workflow
-1. the API will be defined using swagger specifications. learn about it on http://swagger.io/specification/
-2. update swagger.yml to include the new API specification. refer to following example
+  1) the API will be defined using swagger specifications. learn about it on http://swagger.io/specification/
+
+  2) update swagger.yml to include the new API specification. refer to following example
 ```yaml
 ---
 swagger: '2.0'
@@ -56,19 +57,23 @@ definitions:
       message:
         type: string
 ```
-3. verify yaml
+
+  3) verify yaml
 ```bash
 TBD
 ```
-4. generate server files
+
+  4) generate server files
 ```bash
 TBD
 ```
-5. generate sdk files
+
+  5) generate sdk files
 ```bash
 TBD
 ```
-6. push generated files to repo
+
+  6) push generated files to repo
 ```bash
 TBD
 ```
